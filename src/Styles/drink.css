@@ -1,0 +1,74 @@
+.menu-container{
+    border-top: solid #8B0000 20px;
+    border-bottom: solid #8B0000 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 42.19%, rgba(128, 0, 0, 0.51) 83.33%), url('../Assets/Images/drink.JPG');
+    background-size: cover;
+    padding: 50px;
+}
+
+.glass{
+    backdrop-filter: blur(2px);
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 1.6rem;
+    padding: 10px;
+    box-shadow: 5px 5px 25px 0 rgba(0,0,0,042.19%);
+
+}
+.menu{
+    text-align: center;
+}
+.drink-menu{
+    display: flex;
+}
+
+.middleItem{
+    border-right: solid white 1px;
+    border-left: solid white 1px;
+  
+}
+#bottom-menu{
+    display: flex;
+}
+#cup-button{
+    margin-top: 20px;
+    float: right;
+}
+#cup-info{
+    margin-top: 50px;
+    display: flex;
+}
+#cup-img{
+    background: url('../Assets/Images/cup.JPG');
+    background-size: cover;
+    background-position: center center;
+    margin-right: 20px;
+}
+#cup-desc{
+    padding: 20px;
+    padding-right: 30px;
+}
+#cup-desc.font{
+    font-size: 20px;
+}
+@media only screen and (max-width: 767px){
+    .drink-menu{
+        display: block;
+    }
+    .cups{
+        margin-top: 15px;
+    }
+    #cup-button{
+
+        float: none;
+    }
+    #bottom-menu{
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 1182px){
+    .middleItem{
+        border: none;
+    }
+
+}

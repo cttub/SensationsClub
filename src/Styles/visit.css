@@ -1,0 +1,85 @@
+#location{
+    background:  linear-gradient(180deg, rgba(0, 0, 0, 0.51) 42.19%, rgba(128, 0, 0, 0.51) 83.33%), url('../Assets/Images/location_header.JPG');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+#loca-content{
+    padding-top: 15%;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+#locationBut.button{
+    margin-left: 20px;
+}
+#number{
+    text-decoration: underline;
+}
+.maps{
+    margin-top: 200px;
+    padding: 60px;
+}
+.map-text{
+    padding: 20px;
+}
+.times{
+    display: flex;
+}
+.time-item > img{
+    padding-top: 50%;
+    width: 100%;
+}
+#times-desc{
+    padding-left: 10px;
+}
+
+#inola, #galena{
+    padding-top: 100px;
+    display: flex;
+}
+
+@media only screen and (max-width: 697px){
+    .button-container{
+        display: block;
+    }
+    #inola, #galena{
+
+        display: block;
+    }
+    .map-text{
+        padding: 0px;
+    }
+    .maps{
+        margin-top: 200px;
+        padding: 10px;
+    }
+
+}
+@media only screen and (max-width: 431px){
+    a#locationBut{
+        margin-bottom: 10%;
+       display: block;
+    }
+}
+@media only screen and (max-width: 1102px){
+    #times-desc{
+        padding-left: 0px;
+    }
+    
+    .time-item > img{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 564px){
+    .weekday{
+        text-decoration: underline;
+    }
+    .weekday-and-time > p{
+        font-size: 20px;
+    }
+
+
+}

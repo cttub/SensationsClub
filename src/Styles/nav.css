@@ -1,0 +1,31 @@
+#navigationBar{
+    position: absolute;
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    
+    z-index: 1;
+    top: 0;
+}
+.logoImage{
+    width: 100px;
+    z-index: 10;
+}
+.logo-spot  > .logoImage{
+   margin-top: -20px;
+   margin-left: 30px;
+   margin-right: 5px;
+}
+.leftNav{
+    padding-top: 25px;
+    display: flex;
+}
+.navItem{
+    margin-right: 50px;
+}/*1181*/
+
+@media only screen and (max-width: 1181px){
+    #navigationBar{
+        display: none;
+    }
+}

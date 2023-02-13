@@ -1,0 +1,36 @@
+/*Landing Styles*/
+#home-landing{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 42.19%, rgba(128, 0, 0, 0.51) 83.33%), url('../Assets/Images/header_image.JPG');
+    background-size: cover;
+    background-position: center;
+}
+.text-center{
+    margin-top: 15%;
+}
+div.section .fancy-heading {
+    border: solid 1px;
+    padding: 10px;
+  }
+
+/*Work*/
+#work{
+    padding-top: 5%;
+    border-top: solid white 3px;
+}
+#workIMG{
+    background: url('../Assets/Images/apply_with_us.JPG');
+    background-size: cover;
+    height: 80vh;
+    margin-right: 30px;
+}
+#workText{
+    margin-top: 10%;
+}
+#workText > .fancy-heading{
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#workText > .fancy-subheading{
+    text-align: center;
+}

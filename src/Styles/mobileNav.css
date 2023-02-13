@@ -1,0 +1,49 @@
+@media only screen and (min-width: 1181px){
+    #mobileDiv{
+        display: none;
+    }
+    #navButtonMobile{
+        display: none;
+    }
+}
+#navButtonMobile{
+   position: absolute;
+   z-index: 3;
+   background-color: transparent !important;
+   padding-left: 10px !important;
+   padding-right: 10px !important;
+   border-radius: 0px !important;
+}
+
+
+#mobileDiv{
+    margin-top: -10px;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+   
+}
+.icon-large {
+    font-size: 40px;
+    padding: 10px;
+  }
+
+#navButtonMobile > icon{
+    width: 30%;
+}
+
+.listMobile{
+    padding-top: 10px;
+    background: rgba(139, 0, 0, 0.66);
+    list-style-type: none;
+    text-align: center;
+  }
+.listMobile > li{
+ padding-top: 20px;
+ padding-bottom: 10px;
+}
+
+.listMobile > li:hover{
+    background: rgba(139, 0, 0, 0.76);
+}
