@@ -4,6 +4,19 @@ import Fade from 'react-reveal/Fade';
 import '../Styles/visit.css';
 import clock from '../Assets/clock.svg';
 import Footer from './Footer';
+import '../Styles/tito.css';
+class TitoWidget extends Component {
+  componentDidMount() {
+    const script = document.createElement('script');
+    script.src = 'https://js.tito.io/v2';
+    script.async = true;
+    document.head.appendChild(script);
+  }
+
+  render() {
+    return <tito-widget event="sensationsgc/booking"></tito-widget>;
+  }
+}
 class Visit extends Component {
     scrollToLocation = (location) => {
       document.getElementById(location).scrollIntoView({ behavior: 'smooth' });
@@ -13,18 +26,26 @@ class Visit extends Component {
       return (
         <div id='visit'>
           <Nav />
+
+         
           <div id='location' className='cb-fullpage'>
+
             <div id='loca-content'>
-              <Fade bottom duration={1500}><p className='cb-heading'>Choose a location</p></Fade>
+              <div>
+                <Fade bottom duration={1500}><p className='cb-heading'>Visit Us</p></Fade>
+              </div>
               <div className='button-container'>
                 <button id='locationBut' className='button col-lg-2 col-md-2' onClick={() => this.scrollToLocation('inola')}>Inola OK</button>
                 <button id='locationBut' className='button col-lg-2 col-md-2' onClick={() => this.scrollToLocation('galena')}>Galena, KS</button>
               </div>
+              <TitoWidget />
             </div>
           </div>
             
+            
 
             <div className='maps'>
+            <p className='center-container fancy-heading'>Location and Hours</p>
             <Fade duration = {1500}><div id='inola'>
                         <div className='googleEmbed col-lg-6'>
                             <iframe width="100%" height = "100%" id="gmap_canvas" 

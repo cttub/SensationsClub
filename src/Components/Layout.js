@@ -62,18 +62,18 @@ const Layout = () => {
                             onClick={() => {
                                             document.querySelector("html").scrollTo(0,0);
                                             }}
-                                            to = "/Apply">
-                        <div className='navItem cb-paragraph'>Apply</div></Link>
+                                            to = "/Visit">
+                        <div className='navItem cb-paragraph'>Visit</div>
+                        </Link>
                     </li>
-
+        
                     <li>
                     <Link class = "navItems"
                             onClick={() => {
                                             document.querySelector("html").scrollTo(0,0);
                                             }}
-                                            to = "/Visit">
-                        <div className='navItem cb-paragraph'>Visit</div>
-                        </Link>
+                                            to = "/Apply">
+                        <div className='navItem cb-paragraph'>Apply</div></Link>
                     </li>
 
 

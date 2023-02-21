@@ -17,7 +17,7 @@ class Landing extends Component {
                                             document.querySelector("html").scrollTo(0,0);
                                             }}
                                             to = "/Visit">
-                        <div className='navItem cb-paragraph'> <button>Visit Us</button></div>
+                        <div className='navItem cb-paragraph'> <button>Book with Us</button></div>
                         </Link>
                    
                    

@@ -4,8 +4,9 @@
     background-position: center center;
     text-align: center;
 }
+
 #loca-content{
-    padding-top: 15%;
+    padding-top: 14%;
 }
 .button-container{
     display: flex;
@@ -18,7 +19,6 @@
     text-decoration: underline;
 }
 .maps{
-    margin-top: 200px;
     padding: 60px;
 }
 .map-text{
