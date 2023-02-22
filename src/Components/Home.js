@@ -14,6 +14,7 @@ import GetToKnow from './HomePages/GetToKnow';
 import Why from './HomePages/Why';
 import Experience from './HomePages/Experience';
 import Work from './HomePages/Work';
+import BookWithUs from './HomePages/BookWithUs';
 
 import ReactFullpage from '@fullpage/react-fullpage';
 
@@ -66,6 +67,9 @@ class Home extends Component {
                                 </div>
                                 <div className="section">
                                     <Work />
+                                </div>
+                                <div className="section">
+                                    <BookWithUs />
                                 </div>
                              
                             </ReactFullpage.Wrapper>

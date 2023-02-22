@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import {Route, Link, BrowserRouter} from 'react-router-dom';
+class TitoWidget extends Component {
+    componentDidMount() {
+      const script = document.createElement('script');
+      script.src = 'https://js.tito.io/v2';
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  
+    render() {
+      return  <tito-button event="sensationsgc/booking">Book with Us</tito-button>;;
+    }
+  }
 class Landing extends Component {
     state = {  } 
     render() { 
@@ -12,13 +24,7 @@ class Landing extends Component {
                     <p className='fancy-subheading'>Home of the naked ladies</p>
                    
                    
-                    <Link class = "navItems"
-                            onClick={() => {
-                                            document.querySelector("html").scrollTo(0,0);
-                                            }}
-                                            to = "/Visit">
-                        <div className='navItem cb-paragraph'> <button>Book with Us</button></div>
-                        </Link>
+                    <TitoWidget />
                    
                    
                 </div>

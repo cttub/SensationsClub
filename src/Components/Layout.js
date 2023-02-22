@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 import {Outlet} from "react-router-dom";
 import {Route, Link, BrowserRouter} from 'react-router-dom';
 import '../App.css';
@@ -7,6 +7,18 @@ import Fade from 'react-reveal/Fade';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+class TitoWidget extends Component {
+    componentDidMount() {
+      const script = document.createElement('script');
+      script.src = 'https://js.tito.io/v2';
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  
+    render() {
+      return  <tito-button event="sensationsgc/booking">Book with Us</tito-button>;;
+    }
+  }
 library.add(fas);
 
 
@@ -18,10 +30,11 @@ const Layout = () => {
   };
     return(
         <>   
-        
+            
             <button  onClick={handleClick} id="navButtonMobile" class="hamburger">
                      <FontAwesomeIcon className="icon-large" icon="bars" />
             </button>
+           
         
                <Fade top when={show}><div id ="mobileDiv" className='mobileNav'>
                 
@@ -74,6 +87,8 @@ const Layout = () => {
                                             }}
                                             to = "/Apply">
                         <div className='navItem cb-paragraph'>Apply</div></Link>
+                    </li>
+                    <li>
                     </li>
 
 

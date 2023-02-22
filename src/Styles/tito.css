@@ -1,3 +1,24 @@
-.tito-widget .tito-widget-form{
-    background: black !important;
+.book{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 42.19%, rgba(128, 0, 0, 0.51) 83.33%), url("../Assets/Images/book.JPG");
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+
+}
+.bookWithUs{
+    display: flex;
+    height: 70vh;
+}
+
+#titoStyling > tito-button > .tito-widget-button{
+    font-size: 25px;
+
+}
+#titoStyling > tito-button > .tito-widget-button:hover{
+    
+}
+@media only screen and (max-width: 606px){
+    .book{
+        padding: 0px;
+    }
 }

@@ -7,23 +7,23 @@ class Work extends Component {
     render() { 
         return (
             <div id='work'>
-              <div className='center-container'>
-                <div id = "workIMG" className='col-lg-3 col-md-4 hideSmall'></div>
-                <div id='workText'>
-                    <p className='fancy-heading'>Work with Us</p>
-                    <p className='fancy-subheading'>Wanna be a dancer, bouncer, waitress or DJ?</p>
-                
+                <div className='center-container'>
+                    <div id = "workIMG" className='col-lg-3 col-md-4 hideSmall'></div>
+                    <div id='workText'>
+                        <p className='fancy-heading'>Work with Us</p>
+                        <p className='fancy-subheading'>Wanna be a dancer, bouncer, waitress or DJ?</p>
+                    
 
-                   <Fade bottom><div className='center-container'><Link
-                            onClick={() => {
-                                            document.querySelector("html").scrollTo(0,0);
-                                            }}
-                                            to = "/Apply">
-                        <div className='navItem cb-paragraph'><button>Apply Now</button></div></Link>
-                    </div> </Fade>
+                    <Fade bottom><div className='center-container'><Link
+                                onClick={() => {
+                                                document.querySelector("html").scrollTo(0,0);
+                                                }}
+                                                to = "/Apply">
+                            <div className='navItem cb-paragraph'><button>Apply Now</button></div></Link>
+                        </div> </Fade>
+                    </div>
                 </div>
-                </div>
-                <div className='hideSmall'><Footer/></div>
+               
                 
             </div>
         );

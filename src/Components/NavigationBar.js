@@ -4,7 +4,18 @@ import logo from '../Assets/logo.png';
 import Fade from 'react-reveal/Fade';
 
 import '../Styles/nav.css';
-
+class TitoWidget extends Component {
+    componentDidMount() {
+      const script = document.createElement('script');
+      script.src = 'https://js.tito.io/v2';
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  
+    render() {
+      return  <tito-button event="sensationsgc/booking">Book Now</tito-button>;;
+    }
+  }
 class NavigationBar extends Component {
     state = {  } 
     render() { 
@@ -54,6 +65,9 @@ class NavigationBar extends Component {
 
 
 
+                    </div>
+                    <div className='rightNav'>
+                        <TitoWidget/>
                     </div>
             </div></Fade> 
 

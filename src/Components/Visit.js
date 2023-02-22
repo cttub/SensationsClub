@@ -14,7 +14,7 @@ class TitoWidget extends Component {
   }
 
   render() {
-    return <tito-widget event="sensationsgc/booking"></tito-widget>;
+    return  <tito-button event="sensationsgc/booking">Book with Us</tito-button>;;
   }
 }
 class Visit extends Component {
@@ -33,12 +33,13 @@ class Visit extends Component {
             <div id='loca-content'>
               <div>
                 <Fade bottom duration={1500}><p className='cb-heading'>Visit Us</p></Fade>
+                
               </div>
               <div className='button-container'>
                 <button id='locationBut' className='button col-lg-2 col-md-2' onClick={() => this.scrollToLocation('inola')}>Inola OK</button>
                 <button id='locationBut' className='button col-lg-2 col-md-2' onClick={() => this.scrollToLocation('galena')}>Galena, KS</button>
               </div>
-              <TitoWidget />
+              
             </div>
           </div>
             
