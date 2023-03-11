@@ -2,24 +2,53 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 42.19%, rgba(128, 0, 0, 0.51) 83.33%), url("../Assets/Images/book.JPG");
     background-size: cover;
     background-position: center;
-    padding: 200px;
-    padding-top: 20%;
+    padding-top: 10%;
+    height: 100vh;
 
 }
 .bookWithUs{
     display: flex;
-    height: 70vh;
+}
+.book-cards{
+    display: flex;
+    padding: 0px 60px 60px 60px;
 }
 
+.book-title{
+    text-align: center;
+    border-bottom: solid white 1px;
+}
+.book-info{
+    margin-left: 5px;
+    margin-right: 5px;
+}
 #titoStyling > tito-button > .tito-widget-button{
     font-size: 25px;
-
 }
 #titoStyling > tito-button > .tito-widget-button:hover{
     
+}
+.center{
+    text-align: center;
+}
+.price{
+    text-align: center;
 }
 @media only screen and (max-width: 606px){
     .book{
         padding: 0px;
     }
+}
+@media only screen and (max-width: 911px){
+    .book-cards{
+        display: none;
+    }
+
+
+}
+@media only screen and (max-width: 586px){
+    .book{
+        padding-top:20%;
+    }
+
 }

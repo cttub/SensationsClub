@@ -89,6 +89,12 @@ const Layout = () => {
                         <div className='navItem cb-paragraph'>Apply</div></Link>
                     </li>
                     <li>
+                        <Link class = "navItems"
+                                onClick={() => {
+                                                document.querySelector("html").scrollTo(0,0);
+                                                }}
+                                                to = "/Book">
+                            <div className='navItem cb-paragraph'>Book Now</div></Link>
                     </li>
 
 

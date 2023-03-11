@@ -9,6 +9,7 @@ import Service from './Components/Services';
 import Apply from './Components/Apply';
 import Drink from './Components/Drink';
 import Visit from './Components/Visit';
+import Book from './Components/Book';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path = "Drinks" element = {<Drink/>}/>
                 <Route path = "Visit" element = {<Visit/>}/>
                 <Route path = "Apply" element = {<Apply/>}/>
+                <Route path = "Book" element = {<Book/>}/>
               </Route>
           </Routes>
      </HashRouter>
